@@ -1,0 +1,26 @@
+{
+  "excel-deposit": {
+    "title": "Page content edition",
+    "choose": "Choose",
+    "upload": "Send",
+    "cancel": "Cancel",
+    "deposit": "Send",
+    "download": "Download",
+    "choose-file": "Choose which file to download :",
+    "description": {
+      "faq": "This file contains all questions for the faq",
+      "canvas": "This file is for the canvas page",
+      "administration": "This file contains Terms and conditions, Cookies, Legal informations and Privacy policy pages",
+      "accueil": "This file contains all text for the home page",
+      "structure": "This file is for the header and footer",
+      "utilisateur": "This file is for Connection, Subscribe, Forgotten password and Profile page",
+      "message": "This file contains all information messages"
+    },
+    "popup": {
+      "upload-success": "Upload successful",
+      "upload-fail": "An error occurred during the upload",
+      "download-success": "Download successful",
+      "download-fail": "An error occurred during the download"
+    }
+  }
+}

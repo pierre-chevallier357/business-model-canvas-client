@@ -1,0 +1,24 @@
+/* This is where PrimeNG components are overridden */
+
+.p-tooltip {
+  .p-tooltip-text {
+    font-size: 0.9rem;
+  }
+
+  .p-tooltip-arrow {
+    display: none;
+  }
+}
+
+.p-fileupload {
+  .p-button {
+    background: var(--light-turquoise);
+    border: none;
+  }
+  .p-fileupload-choose:not(.p-disabled):hover {
+    background: var(--turquoise);
+  }
+  .p-button:enabled:hover {
+    background: var(--turquoise);
+  }
+}

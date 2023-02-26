@@ -1,0 +1,23 @@
+<p-dialog
+  *ngIf="router.url !== '/privacy-policy'"
+  [(visible)]="isDialogOpened"
+  [draggable]="false"
+  [modal]="true"
+  [closable]="false">
+  <header class="cookie-header">
+    <span class="pi pi-palette"></span>
+    <h1>{{ 'cookies.title' | translate }}</h1>
+  </header>
+  <p class="cookie-text">{{ 'cookies.text' | translate }}</p>
+  <footer class="cookie-footer">
+    <a routerLink="/privacy-policy" [innerHTML]="'footer.privacy-policy' | translate"></a>
+    <div>
+      <button class="refuse-button" (click)="answerCookiesConsent(false)">
+        {{ 'cookies.no' | translate }}
+      </button>
+      <button class="accept-button" (click)="answerCookiesConsent(true)">
+        {{ 'cookies.yes' | translate }}
+      </button>
+    </div>
+  </footer>
+</p-dialog>

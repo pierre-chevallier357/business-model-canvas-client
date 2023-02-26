@@ -1,0 +1,69 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0.75rem 0;
+  flex-direction: column;
+  align-content: center;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  color: white;
+  padding: 0.5rem 1rem;
+  display: flex;
+  cursor: pointer;
+  box-shadow: 2px 3px 5px rgb(15 15 15 / 30%);
+  background: linear-gradient(90deg, var(--turquoise), var(--dark-turquoise));
+
+  &.save-canvas {
+    position: fixed;
+    bottom: 4em;
+    right: 25px;
+
+    &:hover {
+      background: linear-gradient(-90deg, var(--turquoise), var(--dark-turquoise));
+      transition: 0.3s;
+    }
+  }
+  &.export-pdf {
+    position: fixed;
+    bottom: 1em;
+    right: 25px;
+    &:hover {
+      background: linear-gradient(-90deg, var(--turquoise), var(--dark-turquoise));
+      transition: 0.3s;
+    }
+  }
+
+  &.button-dialog {
+    font-size: 1rem;
+    margin: 1rem 0 0 50%;
+  }
+
+  &.history {
+    width: 8rem;
+    font-size: 1rem;
+    position: fixed;
+    background: var(--light-turquoise);
+    top: 13vh;
+    right: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.input-text {
+  width: 100%;
+  font-size: 1rem;
+}
+
+.side-bar-history {
+  font-size: 1.2rem;
+}
+::ng-deep.name-dialog .p-dialog {
+  min-width: 20rem;
+}

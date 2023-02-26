@@ -1,0 +1,60 @@
+::ng-deep.my-canvas-table .p-datatable {
+  .p-datatable-wrapper {
+    border-radius: 1rem;
+  }
+
+  .name-column,
+  .date-column {
+    width: 35%;
+  }
+
+  .version-column {
+    width: 20%;
+  }
+
+  .option-column {
+    width: 10%;
+  }
+
+  .last-row-buttons {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      font-size: 1.4rem;
+    }
+  }
+
+  .p-sortable-column.p-highlight {
+    color: var(--turquoise);
+
+    &:hover {
+      color: var(--turquoise);
+
+      i {
+        color: var(--turquoise);
+      }
+    }
+
+    i {
+      color: var(--turquoise);
+    }
+  }
+
+  .p-datatable-thead > tr {
+    th:hover.option-column {
+      background-color: #f8f9fa;
+    }
+    th.option-column {
+      cursor: default;
+    }
+  }
+}
+
+::ng-deep .delete-dialog .p-dialog.p-confirm-dialog .p-confirm-dialog-message {
+  font-size: 1.1rem;
+  margin: 0;
+}

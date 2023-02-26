@@ -1,0 +1,15 @@
+{
+  "header": {
+    "button1": "ACCUEIL",
+    "button2": "MÉTHODE",
+    "button3": "CANVAS",
+    "button4": "À PROPOS",
+    "changeLanguage": "Passer en anglais",
+    "admin": "ADMINISTRATION",
+    "login": "CONNEXION",
+    "logindialog": "Se connecter",
+    "forgotpassworddialog": "Mot de passe oublié",
+    "signindialog": "S'inscrire",
+    "profil": "MON COMPTE"
+  }
+}

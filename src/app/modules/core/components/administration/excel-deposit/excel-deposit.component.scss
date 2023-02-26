@@ -1,0 +1,64 @@
+::ng-deep .p-fileupload .p-fileupload-content {
+  min-height: 30vh;
+}
+
+.button-card {
+  width: 10rem;
+  border: 1px solid linear-gradient(90deg, var(--turquoise), var(--light-turquoise));
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0.2rem 0.5rem 0;
+  background: linear-gradient(90deg, var(--turquoise), var(--light-turquoise));
+
+  &:hover {
+    color: var(--black);
+    background: linear-gradient(-90deg, var(--turquoise), var(--light-turquoise));
+    transition: 0.3s;
+    border: 1px solid var(--dark-turquoise);
+  }
+}
+
+.button-download {
+  border: 1px solid linear-gradient(90deg, var(--turquoise), var(--light-turquoise));
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0.2rem 0.5rem 0;
+  background: linear-gradient(90deg, var(--turquoise), var(--light-turquoise));
+
+  &:hover {
+    color: var(--black);
+    background: linear-gradient(-90deg, var(--turquoise), var(--light-turquoise));
+    transition: 0.3s;
+    border: 1px solid var(--dark-turquoise);
+  }
+}
+
+::ng-deep {
+  .p-fileupload .p-button.p-highlight {
+    background: red;
+    background-color: red;
+  }
+
+  .p-fileupload .p-button.p-highlight:hover {
+    background: #198888;
+  }
+}
+
+.choice-title {
+  color: #198888;
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  span {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "mdpoublie": {
+        "form": {
+            "mail": "Adresse e-mail",
+            "resetpassword": "Réinitialiser le mot de passe",
+            "alreadycode": "Déjà un code ?",
+            "code": "Code de vérification",
+            "password": "Nouveau mot de passe",
+            "passwordinvalid": "Le mot de passe doit contenir au moins 8 caractères, une majuscule, une minuscule, un chiffre et un caractère spécial",
+            "confirmpassword": "Confirmation du mot de passe",
+            "confirmpasswordinvalid": "Les mots de passe ne sont pas identiques",
+            "invalidcode": "Code invalide",
+            "cancel": "Annuler"
+        }
+    }
+  }

@@ -1,0 +1,166 @@
+<p-confirmDialog [style]="{ width: '50vw' }" [baseZIndex]="10000"></p-confirmDialog>
+<p-table
+  [value]="canvas"
+  [rows]="25"
+  (sortFunction)="customSort($event)"
+  [customSort]="true"
+  [filterDelay]="2"
+  [resizableColumns]="true">
+  <ng-template pTemplate="header">
+    <tr>
+      <th pSortableColumn="utilisateur.entreprise">
+        {{ 'canvas-management.company' | translate }} <p-sortIcon field="entreprise"></p-sortIcon>
+      </th>
+      <th pSortableColumn="nom">
+        {{ 'canvas-management.name' | translate }} <p-sortIcon field="nom"></p-sortIcon>
+      </th>
+      <th pSortableColumn="utilisateur.nom">
+        {{ 'canvas-management.last-name' | translate }} <p-sortIcon field="nomUser"></p-sortIcon>
+      </th>
+      <th pSortableColumn="utilisateur.prenom">
+        {{ 'canvas-management.first-name' | translate }}
+        <p-sortIcon field="prenomUser"></p-sortIcon>
+      </th>
+      <th pSortableColumn="statut">
+        {{ 'canvas-management.status' | translate }} <p-sortIcon field="statut"></p-sortIcon>
+      </th>
+      <th pSortableColumn="dateModification">
+        {{ 'canvas-management.update' | translate }}
+        <p-sortIcon field="dateModification"></p-sortIcon>
+      </th>
+      <th pSortableColumn="version">
+        {{ 'canvas-management.version' | translate }} <p-sortIcon field="version"></p-sortIcon>
+      </th>
+      <th pSortableColumn="type">
+        {{ 'canvas-management.type' | translate }} <p-sortIcon field="type"></p-sortIcon>
+      </th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>
+        <input
+          pInputText
+          type="text"
+          (input)="filter($event, 'entreprise')"
+          placeholder="{{ 'canvas-management.placeholder' | translate }}"
+          class="p-column-filter" />
+      </th>
+      <th>
+        <input
+          pInputText
+          type="text"
+          (input)="filter($event, 'nom')"
+          placeholder="{{ 'canvas-management.placeholder' | translate }}"
+          class="p-column-filter" />
+      </th>
+      <th>
+        <input
+          pInputText
+          type="text"
+          (input)="filter($event, 'userLastname')"
+          placeholder="{{ 'canvas-management.placeholder' | translate }}"
+          class="p-column-filter" />
+      </th>
+      <th>
+        <input
+          pInputText
+          type="text"
+          (input)="filter($event, 'userFirstname')"
+          placeholder="{{ 'canvas-management.placeholder' | translate }}"
+          class="p-column-filter" />
+      </th>
+      <th>
+        <p-dropdown
+          [options]="optionsStatut"
+          (onChange)="filter($event, 'statut')"
+          placeholder="{{ 'canvas-management.placeholder' | translate }}"
+          class="p-column-filter"
+          [showClear]="true">
+          <ng-template let-option pTemplate="item">
+            <span>{{ option.label }}</span>
+          </ng-template>
+        </p-dropdown>
+      </th>
+      <th>
+        <p-calendar
+          [showClear]="true"
+          selectionMode="range"
+          (onSelect)="filter($event, 'dateModification')"
+          (onClear)="filter($event, 'dateClear')"
+          [(ngModel)]="rangeDatesCanvas"
+          [touchUI]="true"
+          placeholder="{{ 'canvas-management.placeholder' | translate }}"></p-calendar>
+      </th>
+      <th>
+        <input
+          pInputText
+          type="text"
+          (input)="filter($event, 'version')"
+          placeholder="{{ 'canvas-management.placeholder' | translate }}" />
+      </th>
+      <th>
+        <p-dropdown
+          [options]="optionsType"
+          (onChange)="filter($event, 'type')"
+          placeholder="{{ 'canvas-management.placeholder' | translate }}"
+          class="p-column-filter"
+          [showClear]="true">
+          <ng-template let-option pTemplate="item">
+            <span>{{ option.label }}</span>
+          </ng-template>
+        </p-dropdown>
+      </th>
+      <th></th>
+      <th></th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-canvas>
+    <tr>
+      <td class="case">{{ canvas.utilisateur.entreprise }}</td>
+      <td class="case">{{ canvas.nom }}</td>
+      <td class="case">{{ canvas.utilisateur.nom }}</td>
+      <td class="case">{{ canvas.utilisateur.prenom }}</td>
+      <td class="case">{{ canvas.statut }}</td>
+      <td class="case">{{ canvas.dateModification }}</td>
+      <td class="case">{{ canvas.version }}</td>
+      <td class="case">{{ canvas.type }}</td>
+      <td class="button-tab">
+        <button
+          pButton
+          type="button"
+          class="p-button-secondary trash-button"
+          icon="pi pi-eye"
+          (click)="visualizationIndividualCanva(canvas)"></button>
+      </td>
+      <td class="button-tab">
+        <button
+          pButton
+          type="button"
+          class="p-button-secondary trash-button"
+          icon="pi pi-trash"
+          (click)="deleteCanvas(canvas)"></button>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>
+<div style="text-align: center">
+  <p-paginator
+    [rows]="25"
+    [totalRecords]="nbCanvas"
+    [pageLinkSize]="nbPagesCanvas"
+    (onPageChange)="onPageChangeCanvas($event)"></p-paginator>
+</div>
+<p-dialog
+  class="selected-canvas"
+  [header]="getCanvasName()"
+  [(visible)]="displayModal"
+  [modal]="true"
+  [draggable]="false"
+  [resizable]="false">
+  <sfc-canvas
+    class="wrapper"
+    id="canvas"
+    [readOnly]="displayModal"
+    [canvasReadOnly]="canvasSelected"></sfc-canvas>
+</p-dialog>

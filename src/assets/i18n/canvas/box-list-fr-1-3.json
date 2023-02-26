@@ -1,0 +1,16 @@
+{
+  "boxListFr": [
+    { "number": "3", "title": "Besoins" },
+    { "number": "11", "title": "Engagements" },
+    { "number": "2", "title": "Motivations" },
+    { "number": "1", "title": "Valeurs" },
+    { "number": "4", "title": "Vision" },
+    { "number": "6", "title": "Raison d'être" },
+    { "number": "9", "title": "Stratégie" },
+    { "number": "10", "title": "Organisation" },
+    { "number": "8", "title": "Moyens" },
+    { "number": "7", "title": "Compétences" },
+    { "number": "12", "title": "Tableau de bord" },
+    { "number": "5", "title": "Missions" }
+  ]
+}

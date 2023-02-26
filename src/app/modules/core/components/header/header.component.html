@@ -1,0 +1,104 @@
+<nav>
+  <div class="box">
+    <a routerLink="/" routerLinkActive="active" title="Accueil">
+      <img src="assets/logos/logo.png" class="logo" alt="Logo" />
+    </a>
+    <a routerLink="/" routerLinkActive="active" class="link-button first-button">{{
+      'header.button1' | translate
+    }}</a>
+    <a routerLinkActive="active" class="link-button second-button" (click)="goToSection('method')">
+      {{ 'header.button2' | translate }}
+    </a>
+    <a routerLink="/canvas" routerLinkActive="active" class="link-button third-button">{{
+      'header.button3' | translate
+    }}</a>
+    <a
+      routerLinkActive="active"
+      class="link-button fourth-button"
+      (click)="goToSection('who-are-we')">
+      {{ 'header.button4' | translate }}
+    </a>
+    <a routerLink="/faq" routerLinkActive="active" class="link-button fifth-button" title="FAQ">
+      <span class="pi pi-question-circle question-circle"></span>
+    </a>
+  </div>
+  <div class="box">
+    <button
+      *ngIf="translate.currentLang === 'fr'"
+      class="flag-button"
+      (click)="
+        router.url === '/canvas'
+          ? openConfirmationDialog(oppositeLanguage)
+          : switchLang(oppositeLanguage)
+      "
+      [pTooltip]="'header.changeLanguage' | translate"
+      tooltipPosition="bottom">
+      <img src="assets/flags/english-flag.png" alt="English flag" class="other-language" />
+    </button>
+    <button
+      *ngIf="translate.currentLang === 'en'"
+      class="flag-button"
+      (click)="
+        router.url === '/canvas'
+          ? openConfirmationDialog(oppositeLanguage)
+          : switchLang(oppositeLanguage)
+      "
+      [pTooltip]="'header.changeLanguage' | translate"
+      tooltipPosition="bottom">
+      <img src="assets/flags/french-flag.png" alt="Drapeau français" class="other-language" />
+    </button>
+    <a
+      *ngIf="!(this.authService.getCurrentUser() | async)"
+      (click)="showConnexionDialog()"
+      class="connection"
+      [innerHTML]="'header.login' | translate"></a>
+    <p-button
+      *ngIf="this.authService.getCurrentUser() | async"
+      (click)="menu.toggle($event)"
+      pRipple
+      type="button"
+      class="p-button-rounded p-button-info"
+      id="profil"
+      >{{ 'header.profil' | translate }}<span class="pi pi-angle-down"></span
+    ></p-button>
+    <p-slideMenu
+      [ngClass]="{ 'slide-menu-header': !isAdmin, 'slide-menu-header-admin': isAdmin }"
+      #menu
+      [model]="profileItems"
+      [popup]="true">
+    </p-slideMenu>
+  </div>
+</nav>
+<p-confirmDialog
+  [header]="translate.currentLang === 'en' ? 'Filled data loss' : 'Perte des données remplies'"
+  [acceptLabel]="translate.currentLang === 'en' ? 'Yes' : 'Oui'"
+  [rejectLabel]="translate.currentLang === 'en' ? 'No' : 'Non'"
+  icon="pi pi-exclamation-triangle"></p-confirmDialog>
+<p-dialog
+  [modal]="true"
+  [draggable]="false"
+  [closable]="false"
+  [header]="'header.logindialog' | translate"
+  [visible]="displayConnexion()"
+  [style]="{ width: '30vw' }">
+  <sfc-connexion (newEventEmitter)="eventEmitter($event)"></sfc-connexion>
+</p-dialog>
+<p-dialog
+  *ngIf="displayInscription"
+  [modal]="true"
+  [draggable]="false"
+  [closable]="false"
+  [header]="'header.signindialog' | translate"
+  [(visible)]="displayInscription"
+  [style]="{ width: '30vw' }">
+  <sfc-inscription (newEventEmitter)="eventEmitter($event)"></sfc-inscription>
+</p-dialog>
+<p-dialog
+  [modal]="true"
+  [draggable]="false"
+  [closable]="false"
+  [header]="'header.forgotpassworddialog' | translate"
+  [(visible)]="displayForgottenPassword"
+  [style]="{ width: '30vw' }">
+  <sfc-forgotten-password (newEventEmitter)="eventEmitter($event)"></sfc-forgotten-password>
+</p-dialog>

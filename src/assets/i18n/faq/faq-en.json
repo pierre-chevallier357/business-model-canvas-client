@@ -1,0 +1,62 @@
+[
+  {
+    "id": 52,
+    "question": "Why this tool?",
+    "reponse": "To raise awareness of the importance of the team in technology startups",
+    "version": 1
+  },
+  {
+    "id": 53,
+    "question": "Why free?",
+    "reponse": "To promote this tool more widely",
+    "version": 1
+  },
+  {
+    "id": 54,
+    "question": "Can I use the tool without creating an account?",
+    "reponse": "Yes but you will not be able to save your results",
+    "version": 1
+  },
+  {
+    "id": 55,
+    "question": "Why creating an account?",
+    "reponse": "To be able to save your canvas and compare them over time or with those of other team members",
+    "version": 1
+  },
+  {
+    "id": 56,
+    "question": "What is the risk of spamming?",
+    "reponse": "None, this is not the purpose of this tool GDRP compatible",
+    "version": 1
+  },
+  {
+    "id": 57,
+    "question": "How to complete a personal canvas?",
+    "reponse": "The canvas has 12 blocks. For each topic, write down a few words or short answers",
+    "version": 1
+  },
+  {
+    "id": 58,
+    "question": "How to validate my canvas?",
+    "reponse": "When your canvas is complete, take a moment to evaluate each box in pairs and see if they are consistent",
+    "version": 1
+  },
+  {
+    "id": 59,
+    "question": "How to complete a team canvas?",
+    "reponse": "For each theme, discuss the answers of each team member and choose the ones they agree on",
+    "version": 1
+  },
+  {
+    "id": 60,
+    "question": "What if I want to go further in the analysis?",
+    "reponse": "You can contact the creator of this tool for support (see About)",
+    "version": 1
+  },
+  {
+    "id": 61,
+    "question": "What if I like this tool? ",
+    "reponse": "Talk about it! Thanks for helping us to raise awareness about the importance of people in startups :-)",
+    "version": 1
+  }
+]

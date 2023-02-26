@@ -1,0 +1,22 @@
+{
+  "inscription": {
+    "form": {
+      "title": "Mon profil",
+      "mail": "Adresse e-mail",
+      "lastname": "Nom",
+      "firstname": "Prénom",
+      "password": "Mot de passe",
+      "passwordinvalid": "Le mot de passe doit contenir au moins 8 caractères, une majuscule, une minuscule, un chiffre et un caractère spécial",
+      "confirmpassword": "Confirmation du mot de passe",
+      "confirmpasswordinvalid": "Les mots de passe ne sont pas identiques",
+      "company": "Entreprise",
+      "invalid": "Formulaire d'inscription invalide",
+      "cancel": "Annuler",
+      "invalidmail": "Adresse mail incorrecte",
+      "agree": "J'accepte les ",
+      "conditions": "Conditions Générales d'Utilisation",
+      "signin": "S'inscrire",
+      "alreadymail": "Adresse mail déjà utilisée"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<footer class="footer" [ngClass]="{ hide: this.router.url === '/canvas' }">
+  <div class="category socials">
+    <button class="cogiteo" (click)="openNewWebPage('https://www.cogiteo.net')">
+      <img src="assets/media/cogiteo.png" alt="Cogiteo logo" class="cogiteo-logo" />
+    </button>
+  </div>
+  <div class="category legal">
+    <p>
+      <a routerLink="/mentions" [innerHTML]="'footer.mention' | translate"></a> |
+      <a
+        routerLink="/terms-conditions"
+        class="separation"
+        [innerHTML]="'footer.terms-conditions' | translate"></a>
+      | <a routerLink="/privacy-policy" [innerHTML]="'footer.privacy-policy' | translate"></a>
+    </p>
+    <p class="copyright-text" [innerHTML]="'footer.bring-by' | translate"></p>
+    <p class="copyright-text">contact(at)startupfoundercanvas.com</p>
+  </div>
+  <div class="category socials">
+    <button class="linkedin" (click)="openNewWebPage('https://www.linkedin.com/in/michelcezon/')">
+      <img src="assets/media/linkedin.png" alt="LinkedIn logo" class="linkedin-logo" />
+    </button>
+  </div>
+</footer>

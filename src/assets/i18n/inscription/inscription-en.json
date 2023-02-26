@@ -1,0 +1,22 @@
+{
+  "inscription": {
+    "form": {
+      "title": "Mon profil",
+      "mail": "Email address",
+      "lastname": "Last name",
+      "firstname": "First name",
+      "password": "Password",
+      "passwordinvalid": "The password must contain at least 8 characters, one uppercase and lowercase character, one number and one special character",
+      "confirmpassword": "Confirm password",
+      "confirmpasswordinvalid": "Passwords are not the same",
+      "company": "Company",
+      "invalid": "Form is invalid",
+      "cancel": "Cancel",
+      "invalidmail": "Email address is invalid",
+      "conditions": "Terms Of Use",
+      "agree": "I agree to the ",
+      "signin": "Sign in",
+      "alreadymail": "Email address is already used"
+    }
+  }
+}

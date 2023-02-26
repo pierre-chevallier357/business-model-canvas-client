@@ -1,0 +1,32 @@
+{
+  "popup": {
+    "pdf": {
+      "success": "Téléchargement terminé",
+      "danger": "Erreur lors du téléchargement du fichier PDF"
+    },
+    "canvas": {
+      "delete-success": "Canvas supprimé avec succès",
+      "delete-fail": "Une erreur est survenu lors de la suppression",
+      "create-success": "Canvas créé avec succès",
+      "create-fail": "Une erreur est survenu lors de la création",
+      "update-success": "Canvas modifié avec succès",
+      "update-fail": "Une erreur est survenu lors de la modification",
+      "title-missing": "Le titre doit être renseigné",
+      "connexion-missing-for-save": "Vous devez être connecté pour pouvoir sauvegarder un canvas",
+      "delete-confirm": {
+        "question": "Voulez-vous vraiment supprimer ce canvas ?",
+        "yes": "Oui",
+        "no": "Non"
+      }
+    },
+    "profil": {
+      "delete-success": "Le compte a bien été supprimé",
+      "update-success": "Les modifications ont été enregistrées",
+      "delete-fail": "Une erreur est survenu lors de la suppression"
+    },
+    "mdpoublie": {
+      "reset-success": "Le mot de passe a bien été réinitialisé",
+      "mail-success": "Si un compte est lié à cette adresse, un mail a été envoyé"
+    }
+  }
+}

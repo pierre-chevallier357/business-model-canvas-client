@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Startup Founder Canvas</title>
+    <base href="/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Startup Founder Canvas" />
+    <meta property="og:site_name" content="Startup Founder Canvas" />
+    <meta
+      property="og:description"
+      content="Startup Founder Canvas, l'outil de réflexion pour le fondateur et les équipes de startups pour mesurer et comparer ses valeurs avec ses pairs." />
+    <meta name="twitter:title" content="Startup Founder Canvas" />
+    <meta
+      name="twitter:description"
+      content="Startup Founder Canvas, l'outil de réflexion pour le fondateur et les équipes de startups pour mesurer et comparer ses valeurs avec ses pairs." />
+    <meta
+      name="description"
+      content="Startup Founder Canvas, l'outil de réflexion pour le fondateur et les équipes de startups pour mesurer et comparer ses valeurs avec ses pairs." />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Michel Cezon" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script>
+      function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+      }
+      activateGoogleAnalytics();
+      function activateGoogleAnalytics() {
+        if (getCookie('HAS_ACCEPTED_COOKIES') === 'true') {
+          var head = document.getElementsByTagName('head')[0];
+          var script = document.createElement('script');
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-0N7TNSRDHY';
+          script.type = 'text/javascript';
+          script.async = true;
+          head.appendChild(script);
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'G-0N7TNSRDHY');
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <sfc-root></sfc-root>
+  </body>
+</html>

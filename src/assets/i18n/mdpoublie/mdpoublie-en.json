@@ -1,0 +1,16 @@
+{
+    "mdpoublie": {
+        "form": {
+            "mail": "Email address",
+            "resetpassword": "Reset password",
+            "alreadycode": "Already a code ?",
+            "code": "Code",
+            "password": "New password",
+            "passwordinvalid": "The password must contain at least 8 characters, one uppercase and lowercase character, one number and one special character",
+            "confirmpassword": "Confirm password",
+            "confirmpasswordinvalid": "Passwords are not the same",
+            "invalidcode": "Invalid code",
+            "cancel": "Cancel"
+        }
+    }
+  }

@@ -1,0 +1,20 @@
+{
+  "my-canvas": {
+    "title": "Mes Canvas",
+    "individual": {
+      "title": "Mes canvas",
+      "canvas": {
+        "name": "Nom",
+        "date": "Dernière modification",
+        "version": "Version",
+        "status": "Status",
+        "option": "Option"
+      }
+    },
+    "history": {
+      "button": "Historique",
+      "title": "Vos précédents canvas",
+      "empty-list": "Vous n'avez aucun précédent canvas"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "mentions": {
+    "title": "Mentions légales d'informations",
+    "article1": {
+      "title": "1. Formulaire de collecte de données à caractère personnel :",
+      "content": "<p>Les informations recueillies dans le questionnaire sont enregistrées dans un fichier informatisé par Startup Founder Canvas. La base légale du traitement est l’acceptation des conditions générales d’utilisations (CGU).</p><p>Les données marquées par un astérisque dans le questionnaire doivent obligatoirement être fournies. Dans le cas contraire, vous ne pourrez plus accéder aux services associés à votre compte utilisateur.</p><p>Les données collectées seront communiquées aux seuls destinataires suivants : l’hébergeur Always Data et Cogiteo.</p><p>Elles sont conservées tant que le compte utilisateur est actif. Vous pouvez accéder aux données vous concernant, les rectifier, demander leur effacement ou exercer votre droit à la limitation du traitement de vos données. Vous pouvez retirer à tout moment votre consentement au traitement de vos données ; Vous pouvez également vous opposer au traitement de vos données ; Vous pouvez également exercer votre droit à la portabilité de vos données.Consultez le site cnil.fr pour plus d’informations sur vos droits.</p><p>Pour exercer ces droits ou pour toute question sur le traitement de vos données dans ce dispositif, vous pouvez contacter le cas échéant, notre délégué à la protection des données, Michel CEZON : contact@cogiteo.net, à l’adresse COGITEO, 11 Lot. Pré Novel 38420 Le Versoud au +33 6 70 90 34 26.</p><p>Si vous estimez, après nous avoir contactés, que vos droits « Informatique et Libertés » ne sont pas respectés, vous pouvez adresser une réclamation à la CNIL.</p>"
+    },
+    "article2": {
+      "title": "2. Objet du traitement (finalité et base légale) :",
+      "content": "<p>Startup Founder Canvas dispose d’un site internet d’auto-évaluation qui croise les mises en perspectives humaine et business ; à cette occasion les données personnelles sont enregistrées et traitées dans une base de données.</p><p>Cette base de données permet :</p><p>- L'évaluation de l'entreprise par le(s)/la collaborateur(s)trice(s) et le(s)/la dirigeant(s)/(es) de l'entreprise.</p><p>- L’affectation d’un consultant à l’entreprise.</p><p>- La comparaison des résultats entre le(s)/la collaborateur(s)trice(s) et le(s)/la dirigeant(s)/(es).</p><p>- L’affichage et/ou téléchargement des résultats.</p>"
+    },
+    "article3": {
+      "title": "3. Bases légales des traitements :",
+      "content": "<p>Autoévaluation des dirigeants : la base légale du traitement est l’exécution des conditions générales d’utilisation (Cf. article 6.1.b) du Règlement européen sur la protection des données.</p>"
+    },
+    "article4": {
+      "title": "4. Catégories de données :",
+      "content": "<p>Les catégories de données collectées sont exclusivement celles listées ci-dessous :</p><p>Identité : Données d'identification, Nom, Prénom, Nom de société, Adresse, E-mail, Téléphone.</p>"
+    },
+    "article5": {
+      "title": "5. Destinataires des données :",
+      "content": "Les services internes de la société Cogiteo sont destinataires de l’ensemble des catégories de données.</p><p>Ses sous-traitants, chargés de l’hébergement du site, sont dépositaires de l’identité de nos utilisateurs."
+    },
+    "article6": {
+      "title": "6. Durée de conservation des données :",
+      "content": "<p>Les données à caractère personnels sont conservées tant que le compte utilisateur est actif.</p>"
+    },
+    "article7": {
+      "title": "7. Vos droits :",
+      "content": "<p>Vous pouvez accéder aux données vous concernant, les rectifier ou les faire effacer. Vous disposez également d'un droit à la portabilité et d’un droit à la limitation du traitement de vos données (Consultez le site cnil.fr pour plus d’informations sur vos droits).</p><p>Pour exercer ces droits ou pour toute question sur le traitement de vos données dans ce dispositif, vous pouvez contacter notre Délégué à la protection des données (DPO).</p><p>- Contacter notre DPO par voie électronique : contact@cogiteo.net</p><p>- Contacter notre DPO par courrier postal :</p><p>Le délégué à la protection des données</p><p>Société Cogiteo</p><p>11 Lot. Pré Novel,</p><p>38420 LE VERSOUD</p></br><p>Si vous estimez, après avoir contacté la société Cogiteo, que vos droits « Informatique et Libertés » ne sont pas respectés, vous pouvez adresser une réclamation en ligne à la CNIL.</p>"
+    }
+  }
+}

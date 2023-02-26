@@ -1,0 +1,100 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  border: 0.5px solid #222;
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem 0.75rem 0;
+  background-color: white;
+
+  .title {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.75rem;
+
+    .turquoise-text {
+      font-weight: 900;
+      font-size: 1.1rem;
+    }
+
+    .icon {
+      font-size: 1.1rem;
+    }
+  }
+
+  .text-wrapper {
+    height: 100%;
+    border: none;
+
+    .plus-button {
+      border: none;
+      background-color: transparent;
+      padding: O;
+      font-weight: 900;
+      cursor: pointer;
+      margin: 0.5rem 0;
+      color: grey;
+    }
+
+    .input-wrapper {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      flex-wrap: wrap;
+      border-radius: 0.2rem;
+      margin-bottom: 0.4rem;
+      outline: 0.5px solid black;
+      padding: 0 0.5rem;
+
+      .input-text {
+        flex: 1;
+        height: 1.8rem;
+        border: none;
+        outline: none;
+      }
+
+      .pi-check:hover {
+        cursor: pointer;
+        width: 1rem;
+        color: darkgreen;
+      }
+    }
+
+    .text-list {
+      margin-bottom: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      word-break: break-all;
+
+      .text {
+        padding: 0.2rem 0.4rem;
+        margin-bottom: 0.4rem;
+        background-color: #dcfefa;
+        list-style-type: none;
+        border-radius: 0.2rem;
+        color: var(--black);
+
+        span {
+          display: none;
+        }
+
+        &:hover span {
+          display: flex;
+          float: right;
+          border: none;
+          background-color: transparent;
+          margin-top: 0.1rem;
+          color: darkred;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+::ng-deep .help-tooltip.p-tooltip.p-component {
+  min-width: 20rem;
+}

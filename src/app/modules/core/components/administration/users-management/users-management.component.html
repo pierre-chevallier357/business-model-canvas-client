@@ -1,0 +1,102 @@
+<p-confirmDialog [style]="{ width: '50vw' }" [baseZIndex]="10000"></p-confirmDialog>
+<p-table
+  [value]="users"
+  [rows]="25"
+  (sortFunction)="customSort($event)"
+  [customSort]="true"
+  [filterDelay]="2">
+  <ng-template pTemplate="header">
+    <tr>
+      <th pSortableColumn="entreprise">
+        {{ 'user-management.company' | translate }} <p-sortIcon field="entreprise"></p-sortIcon>
+      </th>
+      <th pSortableColumn="nom">
+        {{ 'user-management.last-name' | translate }} <p-sortIcon field="nom"></p-sortIcon>
+      </th>
+      <th pSortableColumn="prenom">
+        {{ 'user-management.first-name' | translate }} <p-sortIcon field="prenom"></p-sortIcon>
+      </th>
+      <th pSortableColumn="mail">
+        {{ 'user-management.email' | translate }} <p-sortIcon field="mail"></p-sortIcon>
+      </th>
+      <th>{{ 'user-management.is-admin' | translate }}</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>
+        <input
+          pInputText
+          type="text"
+          (input)="filter($event, 'entreprise')"
+          placeholder="{{ 'user-management.placeholder.company' | translate }}"
+          class="p-column-filter" />
+      </th>
+      <th>
+        <input
+          pInputText
+          type="text"
+          (input)="filter($event, 'nom')"
+          placeholder="{{ 'user-management.placeholder.last-name' | translate }}"
+          class="p-column-filter" />
+      </th>
+      <th>
+        <input
+          pInputText
+          type="text"
+          (input)="filter($event, 'prenom')"
+          placeholder="{{ 'user-management.placeholder.first-name' | translate }}"
+          class="p-column-filter" />
+      </th>
+      <th>
+        <input
+          pInputText
+          type="text"
+          (input)="filter($event, 'mail')"
+          placeholder="{{ 'user-management.placeholder.email' | translate }}"
+          class="p-column-filter" />
+      </th>
+      <th>
+        <p-dropdown
+          [options]="options"
+          (onChange)="filter($event.value, 'estAdmin')"
+          placeholder="{{ 'user-management.placeholder.is-admin' | translate }}"
+          class="p-column-filter"
+          [showClear]="true">
+          <ng-template let-option pTemplate="item">
+            <span>{{ option.label }}</span>
+          </ng-template>
+        </p-dropdown>
+      </th>
+      <th></th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-user>
+    <tr>
+      <td style="flex: 0 0 15rem">{{ user.entreprise }}</td>
+      <td style="flex: 0 0 15rem">{{ user.nom }}</td>
+      <td style="flex: 0 0 15rem">{{ user.prenom }}</td>
+      <td style="flex: 0 0 15rem">{{ user.mail }}</td>
+      <td style="flex: 0 0 15rem">
+        <p-dropdown
+          [options]="options"
+          [(ngModel)]="user.estAdmin"
+          (onChange)="putAdmin($event.value, user.guidutilisateur)"></p-dropdown>
+      </td>
+      <td>
+        <button
+          pButton
+          type="button"
+          class="p-button-secondary trash-button"
+          icon="pi pi-trash"
+          (click)="deleteUser(user)"></button>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>
+<div style="text-align: center">
+  <p-paginator
+    [rows]="25"
+    [totalRecords]="nbUsers"
+    [pageLinkSize]="nbPages"
+    (onPageChange)="onPageChange($event)"></p-paginator>
+</div>

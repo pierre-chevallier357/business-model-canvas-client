@@ -1,0 +1,19 @@
+tr td {
+  text-align: center;
+}
+
+tr th {
+  text-align: center;
+}
+
+:host ::ng-deep .p-sortable-column {
+  width: 15%;
+}
+
+:host ::ng-deep .p-component {
+  width: 100%;
+}
+
+:host ::ng-deep .p-datatable > .p-datatable-wrapper {
+  overflow: visible;
+}

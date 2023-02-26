@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0.75rem 0;
+  flex-direction: column;
+  align-content: center;
+}
+
+::ng-deep.selected-canvas .p-dialog {
+  min-width: 90%;
+  max-height: 98%;
+}

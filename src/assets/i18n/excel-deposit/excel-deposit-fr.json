@@ -1,0 +1,26 @@
+{
+  "excel-deposit": {
+    "title": "Édition du contenu des pages",
+    "choose": "Choix",
+    "upload": "Envoyer",
+    "cancel": "Annuler",
+    "deposit": "Dépôt",
+    "download": "Télécharger",
+    "choose-file": "Choisir un fichier à télécharger :",
+    "description": {
+      "faq": "Ce fichier contient l'ensemble des questions de la FAQ",
+      "canvas": "Ce fichier contient les textes du canvas",
+      "administration": "Ce fichier contient les textes des CGU, Cookies, Mentions d'informations et Politique de confidentialité",
+      "accueil": "Ce fichier contient les textes de la page d'accueil du site",
+      "structure": "Ce fichier contient les textes de l'entête et du pied de page du site",
+      "utilisateur": "Ce fichier contient les textes des pages de Connexion, d'Inscription, de Mot de passe oublié et de Profil",
+      "message": "Ce fichier contient l'ensemble des messages d'informations du site"
+    },
+    "popup": {
+      "upload-success": "Téléversement réussi",
+      "upload-fail": "Une erreur est survenu lors du téléversement",
+      "download-success": "Téléchargement réussi",
+      "download-fail": "Une erreur est survenu lors du télécharghement"
+    }
+  }
+}

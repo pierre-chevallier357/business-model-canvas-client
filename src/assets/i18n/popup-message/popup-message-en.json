@@ -1,0 +1,32 @@
+{
+  "popup": {
+    "pdf": {
+      "success": "Download success",
+      "danger": "Error during PDF download"
+    },
+    "canvas": {
+      "delete-success": "Delete successful",
+      "delete-fail": "An error occurred during the deletion",
+      "create-success": "Canvas successfully",
+      "create-fail": "An error occurred during the canvas creation",
+      "update-success": "Canvas updated",
+      "update-fail": "An error occurred during the canvas update",
+      "title-missing": "The title must be filled in",
+      "connexion-missing-for-save": "You must be logged in to be able to save a canvas",
+      "delete-confirm": {
+        "question": "Did you really want delete this canvas ?",
+        "yes": "Yes",
+        "no": "No"
+      }
+    },
+    "profil": {
+      "delete-success": "Delete successful",
+      "update-success": "Update successful",
+      "delete-fail": "An error occurred during the deletion"
+    },
+    "mdpoublie": {
+      "reset-success": "The password has been reset",
+      "mail-success": "If there is an account with this address, an email has been sent"
+    }
+  }
+}

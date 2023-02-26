@@ -1,0 +1,21 @@
+{
+    "profil": {
+        "form": {
+            "title": "Mon profil",
+            "mail": "Adresse e-mail",
+            "lastname": "Nom",
+            "firstname": "Prénom",
+            "oldpassword": "Ancien mot de passe",
+            "password": "Nouveau mot de passe",
+            "passwordinvalid": "Le mot de passe doit contenir au moins 8 caractères, une majuscule, une minuscule, un chiffre et un caractère spécial",
+            "confirmpassword": "Confirmation du mot de passe",
+            "confirmpasswordinvalid": "Les mots de passe ne sont pas identiques",
+            "company": "Entreprise",
+            "invalid": "Mots de passe incorrects",
+            "saveedit": "Enregistrer les modifications",
+            "deleteaccount": "Supprimer le compte",
+            "confirmdelete": "Êtes-vous sûr de vouloir supprimer votre compte? Cette action est irréversible.",
+            "cancel": "Annuler"
+        }
+    }
+  }

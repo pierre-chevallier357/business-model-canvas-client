@@ -1,0 +1,47 @@
+<div class="canvas-header">
+  <div class="header-title">{{ this.headerLibelle.headerTitle | translate }}</div>
+  <div class="wrapper">
+    <div class="title-date">
+      <div>
+        {{ this.headerLibelle.canvasTitle | translate }} {{ titlePDF }}
+        <input
+          *ngIf="!isExportingAsPdf"
+          class="title"
+          [disabled]="readOnly"
+          pInputText
+          type="text"
+          [value]="canvasReadOnly ? canvasReadOnly.nom : title"
+          [(ngModel)]="title"
+          (ngModelChange)="nameChange()"
+          [placeholder]="'canvas-button.title-placeholder' | translate" />
+      </div>
+      <div>{{ this.headerLibelle.date | translate }} {{ date | date : 'shortDate' }}</div>
+    </div>
+    <span
+      class="help"
+      [pTooltip]="this.headerLibelle.aideGlobaleIndiv | translate"
+      tooltipStyleClass="help-tooltip"
+      [escape]="false"
+      >{{ this.headerLibelle.help | translate }}
+      <span class="pi pi-question-circle question-icon"></span
+    ></span>
+    <img src="assets/logos/logo.png" alt="Logo" class="logo-img" />
+  </div>
+</div>
+<div class="frame">
+  <ng-container *ngFor="let box of boxList; let index = index">
+    <sfc-box
+      [box]="box"
+      class="box{{ index + 2 }}"
+      [hasFocus]="focusedBoxNumber === box.number"
+      [isExportingAsPdf]="isExportingAsPdf"
+      [readOnly]="readOnly"
+      (isUpdated)="updated()"></sfc-box>
+  </ng-container>
+</div>
+<div class="canvas-footer">
+  <p>
+    {{ 'canvas-footer.description' | translate }}
+  </p>
+  <img src="assets/media/by-nc-nd.png" alt="Creative Commons" class="creative-commons" />
+</div>

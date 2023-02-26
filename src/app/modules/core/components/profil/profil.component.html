@@ -1,0 +1,141 @@
+<div class="container">
+  <form [formGroup]="form" #f="ngForm" id="myForm" (ngSubmit)="onSubmit()">
+    <br />
+    <h1 [innerHtml]="'profil.form.title' | translate"></h1>
+    <span>
+      <label [innerHtml]="'profil.form.mail' | translate" class="labelmail" for="mail"></label>
+      <input readonly formControlName="mail" id="mail" type="text" name="mail" #mail pInputText />
+    </span>
+    <br />
+    <br />
+    <span class="p-float-label">
+      <input
+        formControlName="lastname"
+        id="lastname"
+        type="text"
+        name="lastname"
+        required
+        #lastname
+        pInputText />
+      <label [innerHtml]="'profil.form.lastname' | translate" for="lastname"></label>
+    </span>
+    <br />
+    <span class="p-float-label">
+      <input
+        formControlName="firstname"
+        id="firstname"
+        type="text"
+        name="firstname"
+        required
+        #firstname
+        pInputText />
+      <label [innerHtml]="'profil.form.firstname' | translate" for="firstname"></label>
+    </span>
+    <br />
+    <span class="p-float-label">
+      <input
+        [feedback]="false"
+        formControlName="oldpassword"
+        type="password"
+        name="oldpassword"
+        pPassword />
+      <label [innerHtml]="'profil.form.oldpassword' | translate" for="oldpassword"></label>
+    </span>
+    <br />
+    <span class="p-float-label">
+      <input
+        [feedback]="false"
+        formControlName="password"
+        type="password"
+        name="password"
+        pPassword />
+      <label [innerHtml]="'profil.form.password' | translate" for="password"></label>
+      <small
+        *ngIf="
+          !form.get('password')?.valid &&
+          form.get('password')?.dirty &&
+          form.controls['password'].value
+        "
+        id="invalidPassword"
+        class="p-error block"
+        [innerHtml]="'profil.form.passwordinvalid' | translate"></small>
+    </span>
+    <br />
+    <span class="p-float-label">
+      <input
+        [feedback]="false"
+        formControlName="confirmpassword"
+        type="password"
+        name="confirmpassword"
+        pPassword />
+      <label [innerHtml]="'profil.form.confirmpassword' | translate" for="confirmpassword"></label>
+      <small
+        *ngIf="
+          !form.get('confirmpassword')?.valid &&
+          form.get('confirmpassword')?.dirty &&
+          form.controls['confirmpassword'].value
+        "
+        id="invalidConfirmPassword"
+        class="p-error block"
+        [innerHtml]="'profil.form.confirmpasswordinvalid' | translate"></small>
+    </span>
+    <br />
+    <span class="p-float-label">
+      <input
+        formControlName="entreprise"
+        id="entreprise"
+        type="text"
+        name="entreprise"
+        required
+        #entreprise
+        pInputText />
+      <label [innerHtml]="'profil.form.company' | translate" for="entreprise"></label>
+    </span>
+    <br />
+    <small
+      [innerHtml]="'profil.form.invalid' | translate"
+      *ngIf="invalid"
+      id="invalid"
+      class="p-error block"></small>
+    <br *ngIf="invalid" />
+    <div class="submitcancel">
+      <button
+        [innerHtml]="'profil.form.saveedit' | translate"
+        type="submit"
+        [disabled]="!form.valid"
+        styleClass="p-button-text"
+        pButton></button>
+      <button
+        [innerHtml]="'profil.form.deleteaccount' | translate"
+        type="button"
+        styleClass="p-button-text"
+        class="delete"
+        (click)="delete()"
+        pButton></button>
+    </div>
+  </form>
+</div>
+
+<p-dialog
+  [header]="'profil.form.deleteaccount' | translate"
+  [modal]="true"
+  [draggable]="false"
+  [closable]="false"
+  [(visible)]="displayDelete"
+  [style]="{ width: '30vw' }">
+  <p [innerHtml]="'profil.form.confirmdelete' | translate"></p>
+  <div class="submitcancel">
+    <button
+      [innerHtml]="'profil.form.deleteaccount' | translate"
+      styleClass="p-button-text"
+      class="delete"
+      (click)="confirmdelete()"
+      pButton></button>
+    <button
+      [innerHtml]="'profil.form.cancel' | translate"
+      styleClass="p-button-text"
+      class="cancel"
+      (click)="canceldelete()"
+      pButton></button>
+  </div>
+</p-dialog>

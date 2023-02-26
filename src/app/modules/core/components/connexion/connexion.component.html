@@ -1,0 +1,82 @@
+<div class="container">
+  <form [formGroup]="form" #f="ngForm" (ngSubmit)="onSubmit()">
+    <br />
+    <span class="p-float-label">
+      <input *ngIf="!invalid" formControlName="mail" type="text" name="mail" required pInputText />
+      <label [innerHtml]="'connexion.form.mail' | translate" *ngIf="!invalid" for="mail"></label>
+    </span>
+    <span class="p-float-label">
+      <input
+        class="ng-invalid ng-dirty"
+        *ngIf="invalid"
+        formControlName="mail"
+        id="mailInvalid"
+        type="text"
+        name="mailInvalid"
+        required
+        #mailInvalid
+        pInputText />
+      <label
+        [innerHtml]="'connexion.form.mail' | translate"
+        class="ng-invalid ng-dirty"
+        *ngIf="invalid"
+        for="mailInvalid"
+        >Adresse e-mail</label
+      >
+    </span>
+    <br />
+    <span class="p-float-label">
+      <input *ngIf="!invalid" formControlName="password" type="password" pPassword />
+      <label
+        [innerHtml]="'connexion.form.password' | translate"
+        *ngIf="!invalid"
+        for="password"></label>
+    </span>
+    <span class="p-float-label">
+      <input
+        *ngIf="invalid"
+        class="ng-invalid ng-dirty"
+        formControlName="password"
+        type="password"
+        pPassword />
+      <label
+        [innerHtml]="'connexion.form.password' | translate"
+        *ngIf="invalid"
+        class="ng-invalid ng-dirty"
+        for="password"
+        >Mot de passe</label
+      >
+    </span>
+    <small
+      [innerHtml]="'connexion.form.invalid' | translate"
+      *ngIf="invalid"
+      id="invalid"
+      class="p-error block"
+      >Adresse mail ou mot de passe incorrect</small
+    >
+    <br />
+    <br *ngIf="invalid" />
+    <div class="submitcancel">
+      <p-button
+        type="submit"
+        [disabled]="!form.valid"
+        [label]="'connexion.form.login' | translate"
+        styleClass="p-button-text"></p-button>
+      <p-button
+        (click)="onCancel()"
+        [label]="'connexion.form.cancel' | translate"
+        styleClass="p-button-text"></p-button>
+    </div>
+  </form>
+  <br />
+  <div class="submitcancel">
+    <p-button
+      [label]="'connexion.form.createaccount' | translate"
+      (click)="eventEmitter('inscription')"
+      styleClass="p-button-link"></p-button>
+    <p-button
+      [label]="'connexion.form.forgotpassword' | translate"
+      (click)="eventEmitter('mdpoublie')"
+      styleClass="p-button-link"></p-button>
+  </div>
+</div>

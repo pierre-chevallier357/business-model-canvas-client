@@ -1,0 +1,37 @@
+<h1 class="page-title" [innerHTML]="'my-canvas.title' | translate"></h1>
+<article class="content-section">
+  <p-table [value]="myCanvasList" class="my-canvas-table">
+    <ng-template pTemplate="header" class="my-canvas-table">
+      <tr>
+        <th class="name-column" pSortableColumn="nom" id="nom">
+          {{ 'my-canvas.individual.canvas.name' | translate }}<p-sortIcon field="nom"></p-sortIcon>
+        </th>
+        <th class="date-column" id="date">
+          {{ 'my-canvas.individual.canvas.date' | translate }}
+        </th>
+        <th class="version-column" id="version">
+          {{ 'my-canvas.individual.canvas.version' | translate }}
+        </th>
+        <th class="option-column" id="option"></th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-canvas>
+      <tr>
+        <td>{{ canvas.nom }}</td>
+        <td>{{ canvas.dateModification }}</td>
+        <td>{{ canvas.version }}</td>
+        <td>
+          <span class="last-row-buttons">
+            <button class="pi pi-file-edit" (click)="updateIndividualCanvas(canvas)"></button>
+            <button class="pi pi-trash" (click)="deleteIndividualCanvas(canvas)"></button>
+          </span>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+  <p-confirmDialog
+    class="delete-dialog"
+    [message]="'popup.canvas.delete-confirm.question' | translate"
+    [acceptLabel]="'popup.canvas.delete-confirm.yes' | translate"
+    [rejectLabel]="'popup.canvas.delete-confirm.no' | translate"></p-confirmDialog>
+</article>

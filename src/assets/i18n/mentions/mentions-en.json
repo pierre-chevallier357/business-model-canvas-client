@@ -1,0 +1,33 @@
+{
+  "mentions": {
+    "title": "Legal information",
+    "article1": {
+      "title": "1. Personal data collection form :",
+      "content": "<p>The information collected in the questionnaire is recorded in a computerized file by Startup Founder Canvas. The legal basis for the processing is the acceptance of the General Terms and Conditions (GTC).</p><p>The data marked with an asterisk in the questionnaire must be provided. Otherwise, you will not be able to access the services associated with your user account.</p><p>The data collected will be communicated to the following recipients only: the host Always Data and Cogiteo.</p><p>It is kept as long as the user account is active. After 2 years of inactivity, i.e. no access to the site by the members of the user account, an email is sent mentioning the inactivity of the organization members for 2 years. The account will be deleted 31 days after the email is sent if no activity is detected and the associated personal data will be deleted and the questionnaires anonymized.</p><p>You can access your data, rectify it, request its deletion or exercise your right to limit the processing of your data. You can withdraw your consent to the processing of your data at any time; you can also object to the processing of your data; you can also exercise your right to the portability of your data.</p><p>Visit cnil.fr for more information on your rights.</p><p>To exercise these rights or for any question about the processing of your data in this system, you can contact our data protection officer, Michel CEZON: contact@cogiteo.net, at the address COGITEO, 11 Lot. Pré Novel 38420 Le Versoud, or at +33 6 70 90 34 26.</p><p>If you believe, after contacting us, that your rights 'Data proecssing and liberties' are not respected, you can address a complaint to the CNIL.</p>"
+    },
+    "article2": {
+      "title": "2. Purpose of the processing (purpose and legal basis) :",
+      "content": "<p>Startup Founder Canvas has a self-assessment website that crosses human and business perspectives; on this occasion, personal data are recorded and processed in a database.</p><p>This database allows :</p><p>- The evaluation of the company by the collaborator(s) and the manager(s) of the company.</p><p>- The assignment of a consultant to the company.</p><p>- Comparison of the results between the employee(s) and the manager(s).</p><p>- Display and/or download the results.</p>"
+    },
+    "article3": {
+      "title": "3. Legal basis of the treatments :",
+      "content": "<p>Self-assessment of managers: the legal basis for the processing is the execution of the General Terms and Conditions (Cf. Article 6.1.b) of the European Data Protection Regulation.</p>"
+    },
+    "article4": {
+      "title": "4. Categories of data :",
+      "content": "<p>The categories of data collected are exclusively those listed below:</p><p>- Identity: Identification data, Name, First name, Company name, Address, E-mail, Phone number.</p>"
+    },
+    "article5": {
+      "title": "5. Recipients of the data :",
+      "content": "<p>- The internal services of the company Cogiteo are recipients of all categories of data.</p><p>- Its subcontractors, in charge of the hosting of the site, are custodians of the identity of our users.</p>"
+    },
+    "article6": {
+      "title": "6. Duration of data conservation :",
+      "content": "<p>Personal data is kept as long as the user account is active.</p><p>After 2 years of inactivity, i.e. no access to the site by the members of the user account, an email is sent mentioning the inactivity of the organization’s members for 2 years.</p><p>The account will be deleted 31 days after the email is sent if no activity is detected, the associated personal data will be deleted and the questionnaires anonymized.</p>"
+    },
+    "article7": {
+      "title": "7. Your rights :",
+      "content": "<p>You can access your data, rectify it or have it deleted. You also have a right to portability and a right to limit the processing of your data (see cnil.fr for more information on your rights).</p><p>To exercise these rights or for any questions about the processing of your data in this system, you can contact our Data Protection Officer (DPO).</p><p>- Contact our DPO electronically: contact@cogiteo.net</p><p>- Contact our DPO by postal mail:</p><p>The Data Protection Officer</p><p>Société Cogiteo</p><p>11 Lot. Pré Novel,</p><p>38420 LE VERSOUD</p><p>If, after contacting Cogiteo, you feel that your 'Data Protection' rights have not been respected, you can submit a complaint online to the CNIL.</p>"
+    }
+  }
+}

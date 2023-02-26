@@ -1,0 +1,11 @@
+<section class="frequency-asked-question-section">
+  <h1 [innerHTML]="'faqPage.title' | translate"></h1>
+  <p-accordion [multiple]="true">
+    <span *ngFor="let question of questions">
+      <p-accordionTab
+        ><p-header [innerHtml]="question.question"></p-header>
+        <span [innerHTML]="question.reponse"></span>
+      </p-accordionTab>
+    </span>
+  </p-accordion>
+</section>

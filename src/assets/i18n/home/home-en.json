@@ -1,0 +1,34 @@
+{
+  "home": {
+    "title": "Startup Founder Canvas",
+    "subTitle": "Because teams are more important than ideas or technologies",
+    "canvas-section": {
+      "pres": "Complementary to the Business Model Canvas, <u>Strategyzer</u>, the evaluation method and tool for entrepreneur, the associates and the team !",
+      "table": "<b> Benefits for founders and teams: </b> <ul> <li>alignment</li> <li>coherency</li> <li>complementary</li> <li>efficiency</li> </ul>",
+      "quote": " \"We do not bet on ideas, we bet on teams!\" Anonymous VC",
+      "msg": "We would like this tool to raise awareness and help entrepreneurs and teams to feel better in their business.",
+      "button": "Try it !"
+    },
+    "method-section": {
+      "title": "The method",
+      "subTitle": "What is Startup Founder Canvas?",
+      "intro": "This canvas allows us to reflect on the meaning we wish to give to any commitment. It can be completed individually or collectively by members of a team, a project or a startup.",
+      "question-1": "How to complete your personal canvas?",
+      "answer-1": "<p>Answer the questions by thinking about yourself as an individual and forgetting about your project for a while. Follow the order of the boxes to guide your thinking (boxes numbered from 1 to 12). Your purpose should be based on the 5 previous boxes. Your project will be found in the strategy box as one of the means to accomplish your purpose. The dashboard box allows you to regularly check if you are on the right track.</br></br> Attention: it is important to check the coherence of the content of each box with the others. Everything is related and must be harmonious.</br></br> This canvas is valid at the time you make it. It should be revisited periodically.</br></br> Once each team member has completed their canvas, you can complete the collective canvas.</br> This tool has room for improvement and we would welcome any feedback from you.</br></br> Enjoy the Startup Founder Canvas!</p>",
+      "question-2": "How to fill in the collective canvas?",
+      "answer-2": "<p>You should answer the questions using the answers of the team members and forgetting about your project for a while. For each theme, discuss the answers of each team member and choose the ones you agree on or those that are representative of the group. Follow the order of the boxes to guide your thinking (boxes numbered 1 to 12). Your collective purpose should be based on the previous 5 boxes. Your project will be found in the strategy box as one of the means of achieving your purpose. The dashboard box allows you to check regularly if you are on the right track.</br></br> This canvas is valid at the time you make it. It should be revisited periodically.</br></br> This tool has room for improvement and we would welcome any feedback from you.</br></br> Enjoy the Startup Founder Canvas!</p>"
+    },
+    "who-section": {
+      "title": "Who Are We ?",
+      "card": {
+        "title": "Creator of the Startup Founder Canvas",
+        "subTitle": "25 years in startups",
+        "text": "Michel Cezon is <b>professionnel certified coach</b> and <b>Artificial Intelligence</b>, Robotic and Vision Engineer. With 35 years of experiences in Industry, SMEs and Research, he created <b>three startups</b> (Singapore, France, and USA spin-off). Founder and manager of Cogiteo, he coachs and trains founders and managers of startups and SMEs technologies. He teachs in incubators, Industry and universities, works as a <b>certified mediator</b> and belongs to a <b>Business Angels</b> network."
+      }
+    },
+    "thanks-section": "<h2>Thank you to our contributors for their valuable inputs</h2><p>Agnes Dang, Alex Osterwalder, Allassane Touré, Anais Mercier, Antoine Sandanassamy, Benoit Combes, Catherine Cayuela, Catherine Roupie, Christian Rey, Claire Chanterelle, Clémentine Delphin, Cyril Couffe, Daniel Pilaud, Didier Bernard, Dolores Adamski, Dominique Vian, Erno Tornikoski, France Revol, Gregory Gabriel, Guillaume Briançon, Jean-Marc Santi, Jérôme Barrand, Julien Rey, Laura Calmore, Loris Guerrin, Marie Chambon, Michaelle Policard, Néry Aidoud, Nicolas Huguet, Pierre Chevallier, Pierre-Yves Hittelet, Quy-Diem Dao, Rachid Alhiane, Roland Pesty, Sabrina Lhomme, Sylvain Brissot, Véronique Mante, Yanis Mokni... Add your name here?</p>",
+    "end": {
+      "share": "If you like the method and canvas, share them !"
+    }
+  }
+}

@@ -1,0 +1,105 @@
+<div class="container">
+  <form [formGroup]="form" name="form" class="f" #f="ngForm" (ngSubmit)="onSubmit()" novalidate>
+    <br />
+    <span class="p-float-label">
+      <input formControlName="lastname" type="text" name="lastname" required pInputText />
+      <label [innerHtml]="'inscription.form.lastname' | translate" for="lastname"></label>
+    </span>
+    <br />
+    <span class="p-float-label">
+      <input formControlName="firstname" type="text" name="firstname" required pInputText />
+      <label [innerHtml]="'inscription.form.firstname' | translate" for="firstname"></label>
+    </span>
+    <br />
+    <span class="p-float-label">
+      <input formControlName="mail" type="text" name="mail" required pInputText />
+      <label [innerHtml]="'inscription.form.mail' | translate" for="mail"></label>
+      <small
+        [innerHtml]="'inscription.form.invalidmail' | translate"
+        *ngIf="!form.get('mail')?.valid && form.get('mail')?.dirty && form.controls['mail'].value"
+        id="invalidMail"
+        class="p-error block"></small>
+    </span>
+    <br />
+    <span class="p-float-label">
+      <input formControlName="password" type="password" name="password" pPassword />
+      <label [innerHtml]="'inscription.form.password' | translate" for="password"
+        >Mot de passe</label
+      >
+      <small
+        [innerHtml]="'inscription.form.passwordinvalid' | translate"
+        *ngIf="
+          !form.get('password')?.valid &&
+          form.get('password')?.dirty &&
+          form.controls['password'].value
+        "
+        id="invalidPassword"
+        class="p-error block"></small>
+    </span>
+    <br />
+    <span class="p-float-label">
+      <input formControlName="confirmpassword" type="password" name="confirmpassword" pPassword />
+      <label
+        [innerHtml]="'inscription.form.confirmpassword' | translate"
+        for="confirmpassword"></label>
+      <small
+        [innerHtml]="'inscription.form.confirmpasswordinvalid' | translate"
+        *ngIf="
+          !form.get('confirmpassword')?.valid &&
+          form.get('confirmpassword')?.dirty &&
+          form.controls['confirmpassword'].value
+        "
+        id="invalidConfirmPassword"
+        class="p-error block"></small>
+    </span>
+    <br />
+    <span class="p-float-label">
+      <input formControlName="entreprise" type="text" name="entreprise" required pInputText />
+      <label [innerHtml]="'inscription.form.company' | translate" for="entreprise"></label>
+    </span>
+    <br />
+    <div class="submitcancel">
+      <p-checkbox formControlName="conditions" [binary]="true"></p-checkbox>
+      <p class="labelagree" for="conditions">
+        {{ 'inscription.form.agree' | translate
+        }}<a class="labelconditions" [routerLink]="['/terms-conditions']" target="_blank">{{
+          'inscription.form.conditions' | translate
+        }}</a>
+      </p>
+    </div>
+    <br />
+    <div>
+      <re-captcha
+        id="reCaptcha"
+        data-size="compact"
+        #captchaRef="reCaptcha"
+        (resolved)="resolved($event)"
+        formControlName="recaptchaReactive"
+        siteKey="6Ld5nl4kAAAAAE0VirNnK6Cu7ZSmaYixFaOcLrz4">
+      </re-captcha>
+    </div>
+    <br />
+    <small
+      [innerHtml]="'inscription.form.invalid' | translate"
+      *ngIf="invalid"
+      id="invalid"
+      class="p-error block"></small>
+    <small
+      [innerHtml]="'inscription.form.alreadymail' | translate"
+      *ngIf="alreadymail"
+      id="alreadymail"
+      class="p-error block"></small>
+    <br />
+    <div class="submitcancel">
+      <p-button
+        [label]="'inscription.form.signin' | translate"
+        type="submit"
+        [disabled]="!form.valid || !captchaValid"
+        styleClass="p-button-text"></p-button>
+      <p-button
+        [label]="'inscription.form.cancel' | translate"
+        (click)="onCancel()"
+        styleClass="p-button-text"></p-button>
+    </div>
+  </form>
+</div>

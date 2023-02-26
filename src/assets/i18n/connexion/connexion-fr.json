@@ -1,0 +1,13 @@
+{
+    "connexion": {
+        "form": {
+            "mail": "Adresse e-mail",
+            "password": "Mot de passe",
+            "invalid": "Adresse mail ou mot de passe incorrect",
+            "cancel": "Annuler",
+            "login": "Se connecter" ,
+            "createaccount": "Créer un compte",
+            "forgotpassword": "Mot de passe oublié"       
+        }
+    }
+  }

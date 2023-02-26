@@ -1,0 +1,20 @@
+<sfc-canvas
+  class="wrapper"
+  id="canvas"
+  [isExportingAsPdf]="isExportingAsPdf"
+  [readOnly]="false"
+  [title]="canvasName"
+  (canvasNameChange)="changeName($event)"
+  (isUpdated)="updated()"></sfc-canvas>
+<p-sidebar class="side-bar-history" [(visible)]="showSideBar" position="right">
+  {{ 'my-canvas.history.title' | translate }}<sfc-canvas-history></sfc-canvas-history
+></p-sidebar>
+<button *ngIf="userIsConnected" class="history" (click)="showSideBar = true" label="Show">
+  {{ 'my-canvas.history.button' | translate }} <span class="pi pi-history"></span>
+</button>
+<button class="export-pdf" (click)="exportAsPdf()">
+  {{ 'canvas-button.pdf' | translate }}
+</button>
+<button class="save-canvas" (click)="saveCanvas()">
+  {{ 'canvas-button.save' | translate }}
+</button>

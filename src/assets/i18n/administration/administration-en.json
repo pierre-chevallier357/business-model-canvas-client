@@ -1,0 +1,47 @@
+{
+  "canvas-management": {
+    "company": "Company",
+    "name": "Ref",
+    "last-name": "User lastname",
+    "first-name": "User firstname",
+    "status": "Statut",
+    "update": "Last update",
+    "email": "Email",
+    "version": "Version",
+    "type": "Type",
+    "placeholder": "Search",
+    "delete": {
+      "message": "Are you sure to delete this canva ?",
+      "header": "Confirm deletion",
+      "yes": "Yes",
+      "no": "No"
+    }
+  },
+  "user-management": {
+    "company": "Company",
+    "last-name": "Lastname",
+    "first-name": "Firstname",
+    "email": "Email",
+    "is-admin": "Is administrator",
+    "placeholder": {
+      "company": "Sort by company",
+      "last-name": "Sort by last name",
+      "first-name": "Sort by first name",
+      "email": "Sort by email",
+      "is-admin": "Sort by administrator"
+    },
+    "delete": {
+      "message": "Are you sure to delete this user ?",
+      "header": "Confirm deletion",
+      "yes": "Yes",
+      "no": "No"
+    }
+  },
+  "side-menu": {
+    "startedCanvas": "Canvas started : ",
+    "createdCanvas": "Canvas created : ",
+    "userManagement": "Users management",
+    "canvasManagement": "Canvas management",
+    "pageManagement": "Pages management"
+  }
+}

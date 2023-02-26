@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="menu">
+    <p-menu *ngIf="compteurInit.length !== 0" class="compteur" [model]="compteurInit"></p-menu>
+    <p-menu *ngIf="compteurCree.length !== 0" class="compteur" [model]="compteurCree"></p-menu>
+    <p-menu [model]="items"></p-menu>
+  </div>
+  <div class="item" *ngIf="management === allManagement.users">
+    <sfc-users-management></sfc-users-management>
+  </div>
+  <div class="item" *ngIf="management === allManagement.canvas">
+    <sfc-canvas-management></sfc-canvas-management>
+  </div>
+  <div class="item" *ngIf="management === allManagement.faq">
+    <sfc-pages-management></sfc-pages-management>
+  </div>
+</div>

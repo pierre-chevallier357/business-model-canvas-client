@@ -1,0 +1,34 @@
+{
+  "home": {
+    "title": "Startup Founder Canvas",
+    "subTitle": "Parce que l'équipe est plus importante que les idées ou les technologies",
+    "canvas-section": {
+      "pres": "Complementaire du Business Model Canvas, <u>Strategyzer</u>, une méthode et un outil d'évaluation pour l'entrepreneur, les associés et l'équipe !",
+      "table": "<b> Les bénéfices pour les fondateurs et les équipes : </b> <ul> <li>alignement</li> <li>cohérence</li> <li>complémentarité</li> <li>efficience</li> </ul>",
+      "quote": " \"Nous ne parions pas sur les idées, nous parions sur les équipes !\" Investisseur anonyme",
+      "msg": "Nous souhaitons que cet outil fasse prendre conscience aux entrepreneurs de l'importance de l'équipe sur le business.",
+      "button": "Essayez !"
+    },
+    "method-section": {
+      "title": "La méthode",
+      "subTitle": "Qu'est-ce que Startup Founder Canvas ?",
+      "intro": "Ce canvas permet de réfléchir au sens que nous souhaitons donner à tout engagement. Il peut être remplir de façon individuelle ou collective par les membres d’une équipe, d’un projet ou d’une startup.",
+      "question-1": "Comment remplir votre canvas individuel ?",
+      "answer-1": "<p>Vous devez répondre aux questions en pensant à vous en tant qu'individu et en oubliant pour un temps votre projet. Suivez l'ordre des cases pour guider votre réflexion (cases numérotées de 1 à 12). Votre raison d'être devrait s'inspirer des 5 cases précédentes. Votre projet se retrouvera dans la case stratégie comme un des moyens d'accomplir votre raison d'être. La case tableau de bord vous permet de contrôler régulièrement si vous êtes sur la bonne voie.</br></br> Attention : il est important de vérifier la cohérence du contenu de chaque case avec les autres. Tout est en relation et doit être harmonieux.</br></br> Ce canvas est valable à l'instant où vous le faites. Il devra être revisité périodiquement.</br></br> Une fois que chaque membre de l’équipe a fait son canvas, vous pouvez remplir le canvas collectif.</p>",
+      "question-2": "Comment remplir le canvas collectif ?",
+      "answer-2": "<p>Vous devez répondre aux questions en utilisant les réponses des membres de l'équipe et en oubliant pour un temps votre projet. Pour chaque thème, discutez les réponses de chaque membre de l'équipe et choisissez celles qui font unanimité ou qui sont représentatives du groupe. Suivez l'ordre des cases pour guider votre réflexion (cases numérotées de 1 à 12). Votre raison d'être devrait s'inspirer des 5 cases précédentes. Votre projet se retrouvera dans la case stratégie comme un des moyens d'accomplir votre raison d'être. La case tableau de bord vous permet de contrôler régulièrement si vous êtes sur la bonne voie.</br></br> Ce canvas est valable à l'instant où vous le faites. Il devra être revisité périodiquement.</br></br> Ce travail est perfectible et nous serions heureux de tout retour de votre part.</br></br> Bon Startup Founder Canvas !</p>"
+    },
+    "who-section": {
+      "title": "Qui sommes-nous ?",
+      "card": {
+        "title": "Créateur du Startup Founder Canvas",
+        "subTitle": "25 années dans des startups",
+        "text": "Michel Cezon est <b>coach professionnel certifié</b> et ingénieur en <b>Intelligence Artificielle</b>, Robotique et Vision. Avec 35 années d'expériences dans l'industrie, les PME et la Recherche, il a créé <b>trois startups</b> (Singapour, France et une spin-off aux USA). Fondateur et dirigeant de Cogiteo, il accompagne et forme les fondateurs et les managers de startups et PME technologiques. Il collabore avec des incubateurs, dans l'industrie et en écoles de management, intervient comme <b>médiateur</b> certifié et appartient à un réseau de <b>Business Angels</b>."
+      }
+    },
+    "thanks-section": "<h2>Merci à nos contributeurs pour leurs précieux apports</h2><p>Agnes Dang, Alex Osterwalder, Allassane Touré, Anais Mercier, Antoine Sandanassamy, Benoit Combes, Catherine Cayuela, Catherine Roupie, Christian Rey, Claire Chanterelle, Clémentine Delphin, Cyril Couffe, Daniel Pilaud, Didier Bernard, Dolores Adamski, Dominique Vian, Erno Tornikoski, France Revol, Gregory Gabriel, Guillaume Briançon, Jean-Marc Santi, Jérôme Barrand, Julien Rey, Laura Calmore, Loris Guerrin, Marie Chambon, Michaelle Policard, Néry Aidoud, Nicolas Huguet, Pierre Chevallier, Pierre-Yves Hittelet, Quy-Diem Dao, Rachid Alhiane, Roland Pesty, Sabrina Lhomme, Sylvain Brissot, Véronique Mante, Yanis Mokni... Ajouter votre nom ici ?</p>",
+    "end": {
+      "share": "Si vous aimez la méthode et le canvas, n'hésitez pas à les partager !"
+    }
+  }
+}

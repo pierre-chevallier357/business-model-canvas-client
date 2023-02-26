@@ -1,0 +1,62 @@
+[
+  {
+    "id": 52,
+    "question": "Pourquoi cet outil ?",
+    "reponse": "Pour sensibiliser à l'importance de l'équipe dans les startups technologiques",
+    "version": 1
+  },
+  {
+    "id": 53,
+    "question": "Pourquoi gratuit ?",
+    "reponse": "Pour diffuser cet outil plus largement",
+    "version": 1
+  },
+  {
+    "id": 54,
+    "question": "Puis-je utiliser l'outil sans créer de compte ?",
+    "reponse": "Oui mais vous ne pourrez pas sauvegarder vos résultats",
+    "version": 1
+  },
+  {
+    "id": 55,
+    "question": "Pourquoi créer un compte ?",
+    "reponse": "Pour pouvoir sauvegarder ses canvas et les comparer dans le temps ou à ceux des autres membres de l'équipe",
+    "version": 1
+  },
+  {
+    "id": 56,
+    "question": "Quel risque de spamming?",
+    "reponse": "Aucun, ce n'est pas le but de cet outil compatible RGPD",
+    "version": 1
+  },
+  {
+    "id": 57,
+    "question": "Comment remplir un canvas individuel ?",
+    "reponse": "Le canvas comporte 12 cases. Pour chaque thème,  indiquez quelques mots ou réponses courtes",
+    "version": 1
+  },
+  {
+    "id": 58,
+    "question": "Comment valider mon canvas ?",
+    "reponse": "Quand votre canvas est terminé, prenez un temps pour évaluer deux à deux chaque case et voir si elles sont en cohérence",
+    "version": 1
+  },
+  {
+    "id": 59,
+    "question": "Comment remplir un canvas collectif ?",
+    "reponse": "Pour chaque thème, discutez les réponses de chaque membre de l'équipe et choississez celles qui font unanimité",
+    "version": 1
+  },
+  {
+    "id": 60,
+    "question": "Et si je veux aller plus loin dans l'analyse ?",
+    "reponse": "Vous pouvez contacter le créateur de cet outil pour un accompagnement (cf A propos)",
+    "version": 1
+  },
+  {
+    "id": 61,
+    "question": "Et si j'aime cet outil ?",
+    "reponse": "Parlez-en ! Merci de nous aider à sensibiliser sur l'inmportance de l'humain dans la startup :-)",
+    "version": 1
+  }
+]

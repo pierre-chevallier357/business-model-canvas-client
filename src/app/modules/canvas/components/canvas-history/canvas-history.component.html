@@ -1,0 +1,21 @@
+<p-listbox
+  [options]="myCanvasList"
+  [(ngModel)]="canvasSelected"
+  optionLabel="nom"
+  [emptyMessage]="'my-canvas.history.empty-list' | translate"
+  (onClick)="showSelectedCanvas()">
+</p-listbox>
+<p-dialog
+  class="selected-canvas"
+  [header]="getCanvasName()"
+  [(visible)]="displayModal"
+  [modal]="true"
+  [draggable]="false"
+  [resizable]="false"
+  (onHide)="closeCanvasHistory()">
+  <sfc-canvas
+    class="wrapper"
+    id="canvas"
+    [readOnly]="displayModal"
+    [canvasReadOnly]="canvasSelected"></sfc-canvas>
+</p-dialog>

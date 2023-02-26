@@ -1,0 +1,51 @@
+tr td {
+  text-align: center;
+}
+
+tr th {
+  text-align: center;
+}
+:host ::ng-deep .p-sortable-column {
+  max-width: 12.5%;
+}
+
+:host ::ng-deep .p-component {
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0.75rem 0;
+  flex-direction: column;
+  align-content: center;
+}
+
+::ng-deep .selected-canvas.p-dialog {
+  min-width: 90%;
+  max-height: 98%;
+}
+
+:host ::ng-deep .case {
+  max-width: 10px;
+}
+
+:host ::ng-deep .button-tab {
+  width: 70px;
+}
+
+:host ::ng-deep span {
+  overflow: visible;
+}
+
+:host ::ng-deep div.ng-tns-c95-72.p-overlay.p-component.ng-star-inserted {
+  overflow: visible;
+}
+
+:host ::ng-deep .p-datatable-resizable-table > .p-datatable-thead > tr > th,
+:host ::ng-deep .p-datatable-resizable-table > .p-datatable-tfoot > tr > td,
+:host ::ng-deep .p-datatable-resizable-table > .p-datatable-tbody > tr > td {
+  overflow: visible !important;
+  white-space: pre-line !important;
+}

@@ -1,0 +1,15 @@
+.main-background {
+  padding: 1px 0;
+  background: linear-gradient(180deg, var(--turquoise), var(--light-turquoise));
+  background-size: cover;
+  min-height: 100%;
+  position: absolute;
+  padding-bottom: 100px;
+  width: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0; /* on le colle en bas */
+  width: 100%; /* Hauteur du pied de page */
+}

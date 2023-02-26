@@ -1,0 +1,76 @@
+<section class="startup-founder-canvas-section">
+  <h1 [innerHTML]="'home.title' | translate"></h1>
+  <h2 [innerHTML]="'home.subTitle' | translate"></h2>
+  <article class="presentation-article">
+    <img
+      *ngIf="translate.currentLang === 'fr'"
+      src="assets/home/canvas-example-fr.png"
+      alt="Canvas" />
+    <img
+      *ngIf="translate.currentLang === 'en'"
+      src="assets/home/canvas-example-en.png"
+      alt="Canvas" />
+    <div class="card">
+      <p class="turquoise-text" [innerHtml]="'home.canvas-section.pres' | translate"></p>
+      <span class="bold-text" [innerHtml]="'home.canvas-section.table' | translate"> </span>
+      <p class="thin-text">
+        <i [innerHTML]="'home.canvas-section.quote' | translate"></i>
+      </p>
+      <p class="wish-text">
+        <b [innerHTML]="'home.canvas-section.msg' | translate"> </b>
+      </p>
+      <a routerLink="/canvas">
+        <button
+          class="try-it-button"
+          [innerHTML]="'home.canvas-section.button' | translate"></button>
+      </a>
+    </div>
+  </article>
+</section>
+<section class="method-section" id="method">
+  <h1 [innerHTML]="'home.method-section.title' | translate"></h1>
+  <div class="method-wrapper">
+    <div class="method-card">
+      <h2 [innerHTML]="'home.method-section.subTitle' | translate"></h2>
+      <p [innerHTML]="'home.method-section.intro' | translate"></p>
+      <p-accordion>
+        <p-accordionTab [header]="'home.method-section.question-1' | translate">
+          <p [innerHTML]="'home.method-section.answer-1' | translate"></p>
+        </p-accordionTab>
+        <p-accordionTab [header]="'home.method-section.question-2' | translate">
+          <p [innerHTML]="'home.method-section.answer-2' | translate"></p>
+        </p-accordionTab>
+      </p-accordion>
+    </div>
+    <img src="assets/home/post-it.jpg" alt="Post-it" />
+  </div>
+</section>
+<section class="who-are-we-section" id="who-are-we">
+  <h1 [innerHTML]="'home.who-section.title' | translate"></h1>
+  <div class="wrapper">
+    <img src="assets/home/michel-cezon.png" alt="Michel Cezon" class="michel-cezon" />
+    <article class="image-article">
+      <h2 [innerHTML]="'home.who-section.card.title' | translate"></h2>
+      <h3 class="turquoise-title" [innerHTML]="'home.who-section.card.subTitle' | translate"></h3>
+      <p [innerHTML]="'home.who-section.card.text' | translate"></p>
+    </article>
+  </div>
+  <div class="wrapper">
+    <article class="image-article" [innerHTML]="'home.thanks-section' | translate"></article>
+    <img
+      src="assets/home/startup.png"
+      alt="Personnes travaillant sur un bureau"
+      class="desk-working" />
+  </div>
+  <article class="last-article">
+    <p class="download-pdf" *ngIf="translate.currentLang === 'fr'">
+      Si vous préférez télécharger une copie vierge du canvas au format PDF, c’est
+      <u (click)="downloadPdf()">ici</u>.
+    </p>
+    <p class="download-pdf" *ngIf="translate.currentLang === 'en'">
+      If you prefer to download a blank copy of the canvas in PDF format, it is
+      <u (click)="downloadPdf()">here</u>.
+    </p>
+    <p class="end-text" [innerHTML]="'home.end.share' | translate"></p>
+  </article>
+</section>

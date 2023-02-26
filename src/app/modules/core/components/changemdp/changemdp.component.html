@@ -1,0 +1,73 @@
+<div class="container">
+  <form [formGroup]="form" class="f" (ngSubmit)="onSubmit()" novalidate>
+    <br />
+    <span class="p-float-label">
+      <input formControlName="mail" type="text" name="mail" required pInputText />
+      <label [innerHtml]="'mdpoublie.form.mail' | translate" for="mail"></label>
+    </span>
+    <br />
+    <span class="p-float-label">
+      <input formControlName="code" type="text" name="code" required pInputText />
+      <label [innerHtml]="'mdpoublie.form.code' | translate" for="code"></label>
+    </span>
+    <br />
+    <span class="p-float-label">
+      <input
+        [feedback]="false"
+        formControlName="password"
+        type="password"
+        name="password"
+        pPassword />
+      <label [innerHtml]="'mdpoublie.form.password' | translate" for="password"></label>
+      <small
+        *ngIf="
+          !form.get('password')?.valid &&
+          form.get('password')?.dirty &&
+          form.controls['password'].value
+        "
+        [innerHtml]="'mdpoublie.form.passwordinvalid' | translate"
+        id="invalidPassword"
+        class="p-error block"></small>
+    </span>
+    <br />
+    <span class="p-float-label">
+      <input
+        [feedback]="false"
+        formControlName="confirmpassword"
+        type="password"
+        name="confirmpassword"
+        pPassword />
+      <label
+        [innerHtml]="'mdpoublie.form.confirmpassword' | translate"
+        for="confirmpassword"></label>
+      <small
+        *ngIf="
+          !form.get('confirmpassword')?.valid &&
+          form.get('confirmpassword')?.dirty &&
+          form.controls['confirmpassword'].value
+        "
+        [innerHtml]="'mdpoublie.form.confirmpasswordinvalid' | translate"
+        id="invalidConfirmPassword"
+        class="p-error block"></small>
+    </span>
+
+    <br />
+    <small
+      [innerHtml]="'mdpoublie.form.invalidcode' | translate"
+      *ngIf="invalid"
+      id="invalid"
+      class="p-error block"></small>
+    <br *ngIf="invalid" />
+    <div class="submitcancel">
+      <p-button
+        [disabled]="!form.valid"
+        type="submit"
+        [label]="'mdpoublie.form.resetpassword' | translate"
+        styleClass="p-button-text"></p-button>
+      <p-button
+        (click)="onCancel()"
+        [label]="'mdpoublie.form.cancel' | translate"
+        styleClass="p-button-text"></p-button>
+    </div>
+  </form>
+</div>

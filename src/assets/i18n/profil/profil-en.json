@@ -1,0 +1,21 @@
+{
+    "profil": {
+        "form": {
+            "title": "My profile",
+            "mail": "Email address",
+            "lastname": "Last name",
+            "firstname": "First name",
+            "oldpassword": "Old password",
+            "password": "New password",
+            "passwordinvalid": "The password must contain at least 8 characters, one uppercase and lowercase character, one number and one special character",
+            "confirmpassword": "Confirm password",
+            "confirmpasswordinvalid": "Passwords are not the same",
+            "company": "Company",
+            "invalid": "Invalid passwords",
+            "saveedit": "Save changes",
+            "deleteaccount": "Delete account",
+            "confirmdelete": "Are you sure to delete your account ?",
+            "cancel": "Cancel"
+        }
+    }
+  }

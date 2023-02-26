@@ -1,0 +1,84 @@
+<h1 class="page-title">{{ 'excel-deposit.title' | translate }}</h1>
+<article class="content-section">
+  <div class="card">
+    <div class="wrapper">
+      <button class="button-card" (click)="showDownloadPage = false">
+        {{ 'excel-deposit.deposit' | translate }}
+      </button>
+      <button class="button-card" (click)="showDownloadPage = true">
+        {{ 'excel-deposit.download' | translate }}
+      </button>
+    </div>
+    <p-fileUpload
+      #form
+      *ngIf="!showDownloadPage"
+      name="file"
+      [customUpload]="true"
+      uploadIcon="pi pi-send"
+      (uploadHandler)="upload($event, form)"
+      [maxFileSize]="1000000"
+      [uploadLabel]="'excel-deposit.upload' | translate"
+      [chooseLabel]="'excel-deposit.choose' | translate"
+      [cancelLabel]="'excel-deposit.cancel' | translate">
+    </p-fileUpload>
+    <div class="dowload-content" *ngIf="showDownloadPage">
+      <h1 class="choice-title">{{ 'excel-deposit.choose-file' | translate }}</h1>
+      <ul>
+        <li>
+          <span [pTooltip]="'excel-deposit.description.faq' | translate">{{ getFileName(0) }}</span
+          ><button class="button-download" (click)="downloadFile(0)">
+            {{ 'excel-deposit.download' | translate }}
+          </button>
+        </li>
+        <li>
+          <span [pTooltip]="'excel-deposit.description.canvas' | translate">{{
+            getFileName(1)
+          }}</span
+          ><button class="button-download" (click)="downloadFile(1)">
+            {{ 'excel-deposit.download' | translate }}
+          </button>
+        </li>
+        <li>
+          <span [pTooltip]="'excel-deposit.description.administration' | translate">{{
+            getFileName(2)
+          }}</span
+          ><button class="button-download" (click)="downloadFile(2)">
+            {{ 'excel-deposit.download' | translate }}
+          </button>
+        </li>
+        <li>
+          <span [pTooltip]="'excel-deposit.description.accueil' | translate">{{
+            getFileName(3)
+          }}</span
+          ><button class="button-download" (click)="downloadFile(3)">
+            {{ 'excel-deposit.download' | translate }}
+          </button>
+        </li>
+        <li>
+          <span [pTooltip]="'excel-deposit.description.structure' | translate">{{
+            getFileName(4)
+          }}</span
+          ><button class="button-download" (click)="downloadFile(4)">
+            {{ 'excel-deposit.download' | translate }}
+          </button>
+        </li>
+        <li>
+          <span [pTooltip]="'excel-deposit.description.utilisateur' | translate">{{
+            getFileName(5)
+          }}</span
+          ><button class="button-download" (click)="downloadFile(5)">
+            {{ 'excel-deposit.download' | translate }}
+          </button>
+        </li>
+        <li>
+          <span [pTooltip]="'excel-deposit.description.message' | translate">{{
+            getFileName(6)
+          }}</span
+          ><button class="button-download" (click)="downloadFile(6)">
+            {{ 'excel-deposit.download' | translate }}
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</article>

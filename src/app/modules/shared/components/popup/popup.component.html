@@ -1,0 +1,9 @@
+<p-toast position="top-right" key="toast" [baseZIndex]="5000" class="custom-toast">
+  <ng-template let-message pTemplate="message">
+    <div class="p-flex p-flex-column popup-message">
+      <div class="p-text-center">
+        <p>{{ message.detail }}</p>
+      </div>
+    </div>
+  </ng-template>
+</p-toast>
