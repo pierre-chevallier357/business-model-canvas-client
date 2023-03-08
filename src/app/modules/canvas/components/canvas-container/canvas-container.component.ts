@@ -77,9 +77,7 @@ export class CanvasContainerComponent implements OnInit, OnDestroy {
         };
         html2pdf().from(content).set(options).save();
         setTimeout(() => {
-          if (!this.authService.userIsConnected$) {
-            this.canvasService.incrementCanvasCount().subscribe();
-          }
+          this.canvasService.incrementCanvasCount().subscribe();
           this.isExportingAsPdf = false;
         }, 2000);
       }, 100);
